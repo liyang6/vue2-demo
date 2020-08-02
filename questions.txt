@@ -1,0 +1,21 @@
+1、
+// Vue是个什么框架，借鉴MVVM
+// MVVM:数据变化视图会更新，视图变化数据会被影响，不能替你跳过数据去更新视图
+//? ****要看下官网文档这块
+
+2、
+function defineReactive(data, key, value) {
+  Object.defineProperty(data, key, {
+    get() {
+      return value
+    },
+    set(newValue) {
+      if (newValue === value) return
+      value = newValue //?
+    }
+  })
+}
+
+3、函数劫持、切片编程
+4、.__proto__ = ,Object.create,都是继承，区别。
+
