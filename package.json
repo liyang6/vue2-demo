@@ -1,0 +1,19 @@
+{
+  "name": "vue2-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "cross-env": "^7.0.2",
+    "rollup": "^2.23.0",
+    "rollup-plugin-serve": "^1.0.3",
+    "rollup-plugin-babel": "^4.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "rollup -c -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
