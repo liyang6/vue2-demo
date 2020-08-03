@@ -233,6 +233,7 @@
 
       if (currentParent) {
         //在闭合时知道这个标签的父亲，并设置他的儿子
+        // *利用进先进后出方式，设置父子级关联
         element.parent = currentParent;
         currentParent.children.push(element);
       }
