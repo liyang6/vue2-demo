@@ -34,8 +34,11 @@ function initData(vm) {
 
   // 去vm上取值，代理到_data上
   for (const key in data) {
+    console.log(vm, key, data);
+
     proxy(vm, '_data', key)
   }
+
 
   // 数据劫持，对象Object.defineProperty
   observer(data)

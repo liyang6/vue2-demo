@@ -1,5 +1,5 @@
 export function proxy(vm, data, key) {
-  Object.defineProperty(vm, data, {
+  Object.defineProperty(vm, key, {
     get() {
       return vm[data][key]
     },

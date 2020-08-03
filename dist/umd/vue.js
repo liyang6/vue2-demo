@@ -76,7 +76,7 @@
   });
 
   function proxy(vm, data, key) {
-    Object.defineProperty(vm, data, {
+    Object.defineProperty(vm, key, {
       get: function get() {
         return vm[data][key];
       },
@@ -182,6 +182,7 @@
     vm._data = data = typeof data === 'function' ? data.call(vm) : data; // 去vm上取值，代理到_data上
 
     for (var key in data) {
+      console.log(vm, key, data);
       proxy(vm, '_data', key);
     } // 数据劫持，对象Object.defineProperty
 
