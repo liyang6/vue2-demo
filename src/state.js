@@ -34,8 +34,6 @@ function initData(vm) {
 
   // 去vm上取值，代理到_data上
   for (const key in data) {
-    console.log(vm, key, data);
-
     proxy(vm, '_data', key)
   }
 

@@ -18,4 +18,8 @@ function defineReactive(data, key, value) {
 
 3、函数劫持、切片编程
 4、.__proto__ = ,Object.create,都是继承，区别。
+5、sat语法树与虚拟dom
+6、匹配不捕获
+const ncname = `[a-zA-Z_][\\-\\.0-9_a-zA-Z]*`; // 标签名
+const qnameCapture = `((?:${ncname}\\:)?${ncname})`;
 
